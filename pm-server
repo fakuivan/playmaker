@@ -44,7 +44,7 @@ if __name__ == '__main__':
               httpserver.HTTPServer(app,
                                     ssl_options={'certfile': certfile,
                                                  'keyfile': keyfile}))
-    server.listen(5000, address='0.0.0.0')
+    server.listen(5000)
 
     # credentials setup
     auth_file_parser = configparser.ConfigParser()
